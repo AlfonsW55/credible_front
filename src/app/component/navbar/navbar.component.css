@@ -1,0 +1,33 @@
+.navbar{
+    background-color: #d9d9d9 !important;
+}
+
+.btn{
+    background-color: darkblue;
+    color: white;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+     color:white !important;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: blue !important;
+    border-color: #28a745;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: unset !important;
+    outline-offset: -2px;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle {
+    color: #fff;
+    background-color:  blue !important;
+    border-color: #28a745;
+}
+
+.searchbar {
+    width : 500px;
+}
