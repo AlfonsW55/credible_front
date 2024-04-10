@@ -57,6 +57,7 @@ export class HomepageMaincontentComponent implements OnInit {
       console.log(this.commentResponse.comments);
 
       this.commentResponse.comments.forEach(data => {
+        data.isPinned = false;
         const date = new Date(data.commentDateTime);
         // Get the month, day, and year
         const month = date.toLocaleString('default', { month: 'long' });
@@ -157,9 +158,7 @@ export class HomepageMaincontentComponent implements OnInit {
       else{
         this.dynamicElements.splice(exsit,1);
       }
-
-    // console.log("sdsdsdsds",this.dynamicElements);
-
+      
     })
 
   }

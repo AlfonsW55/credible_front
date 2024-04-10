@@ -8,7 +8,7 @@ import { Upvote } from './models/upvote';
   providedIn: 'root'
 })
 export class PostService {
-  private baseUrl = 'http://localhost:3000/';  // Replace with your actual API URL
+  private baseUrl = 'https://only-credit-backend.vercel.app/';  // Replace with your actual API URL
 
   constructor(private http: HttpClient) { }
 

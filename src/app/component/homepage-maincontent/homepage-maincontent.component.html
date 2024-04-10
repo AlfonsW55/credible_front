@@ -104,10 +104,6 @@
                                 </div>
                                 <div class = "d-flex">
                                     <p>{{comment.commentContent}}</p>
-                                    <!-- <div (click)="pressPin(comment._id)" class="ml-3 mr-3">
-                                        <p *ngIf="!comment.isPinned"><img class="pin-icon" alt="" src="../../../assets/pin_off.png" /></p>
-                                        <p *ngIf="comment.isPinned"><img class="pin-icon" alt="" src="../../../assets/pin_on.png" /></p>
-                                    </div> -->
                                     <div (click)="pressPin(comment._id)" class="ml-3 mr-3">
                                         <img class="pin-icon" alt="" [src]="comment.isPinned ? '../../../assets/pin_on.png' : '../../../assets/pin_off.png'" />
                                     </div>                                      
@@ -128,16 +124,6 @@
                                     </ul>
                                 </div>
                             </div>
-                            <!-- <div *ngIf = "comment.isPinned" class = "fixed d-flex align-items-center justify-content-between p-1">
-                                <span style = "font-size:15px" class = "ml-3">
-                                    <img class="pin-icon mr-3" alt="" src="../../../assets/pinned.png" style = "width:25px;height:25px;"/>
-                                    <img class="rounded-circle shadow-1-strong me-3"
-                                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(19).webp" alt="avatar" width="30" height="30" />
-                                    {{comment.userId.username}} / {{comment.commentDateTime}}
-                                </span>
-                                <span class = "mr-4">{{comment.commentContent}}</span>
-                            </div> -->
-                            
                         </div>
                     </div>
                 </div>
